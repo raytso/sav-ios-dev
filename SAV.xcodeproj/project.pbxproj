@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71CE4B2820A7063900E63809 /* SAVReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CE4B2720A7063900E63809 /* SAVReference.swift */; };
 		71D1685B208CBB4F0094A2DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D1685A208CBB4F0094A2DB /* AppDelegate.swift */; };
 		71D16860208CBB4F0094A2DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D1685E208CBB4F0094A2DB /* Main.storyboard */; };
 		71D16862208CBB500094A2DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D16861208CBB500094A2DB /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		260F5B0D3EB01908B50E8F75 /* Pods-SAVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAVUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAVUITests/Pods-SAVUITests.release.xcconfig"; sourceTree = "<group>"; };
 		360504BADC738038C1F8843B /* Pods-SAVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SAVTests/Pods-SAVTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5EC6100C2CDFADC7AD155D45 /* Pods-Hogshead-SAV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hogshead-SAV.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hogshead-SAV/Pods-Hogshead-SAV.release.xcconfig"; sourceTree = "<group>"; };
+		71CE4B2720A7063900E63809 /* SAVReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAVReference.swift; sourceTree = "<group>"; };
 		71D16857208CBB4F0094A2DB /* SAV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D1685A208CBB4F0094A2DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71D1685F208CBB4F0094A2DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		71CE4B2220A4395300E63809 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				71CE4B2720A7063900E63809 /* SAVReference.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		71D1684E208CBB4F0094A2DB = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +144,7 @@
 				71D1685A208CBB4F0094A2DB /* AppDelegate.swift */,
 				71D16888208CBC200094A2DB /* Assets */,
 				71D16891208CBD410094A2DB /* Coordinators */,
+				71CE4B2220A4395300E63809 /* Database */,
 				71D16866208CBB500094A2DB /* Info.plist */,
 			);
 			path = SAV;
@@ -409,6 +420,7 @@
 			files = (
 				71D16897208CBDAB0094A2DB /* AppCoordinator.swift in Sources */,
 				71D1685B208CBB4F0094A2DB /* AppDelegate.swift in Sources */,
+				71CE4B2820A7063900E63809 /* SAVReference.swift in Sources */,
 				71D16894208CBD410094A2DB /* BaseCoordinator.swift in Sources */,
 				71D16895208CBD410094A2DB /* Coordinator.swift in Sources */,
 			);
