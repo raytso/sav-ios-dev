@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		713A22B420A7155F009DD5B7 /* SAVFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713A22B320A7155F009DD5B7 /* SAVFirebase.swift */; };
+		7180D0DD20A70D7600537925 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7180D0DC20A70D7600537925 /* GoogleService-Info.plist */; };
+		71CE4B2620A7061000E63809 /* SAVDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CE4B2520A7061000E63809 /* SAVDatabase.swift */; };
+		71CE4B2820A7063900E63809 /* SAVReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CE4B2720A7063900E63809 /* SAVReference.swift */; };
 		71D1685B208CBB4F0094A2DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D1685A208CBB4F0094A2DB /* AppDelegate.swift */; };
 		71D16860208CBB4F0094A2DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D1685E208CBB4F0094A2DB /* Main.storyboard */; };
 		71D16862208CBB500094A2DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D16861208CBB500094A2DB /* Assets.xcassets */; };
@@ -43,7 +47,11 @@
 		260F5B0D3EB01908B50E8F75 /* Pods-SAVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAVUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAVUITests/Pods-SAVUITests.release.xcconfig"; sourceTree = "<group>"; };
 		360504BADC738038C1F8843B /* Pods-SAVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SAVTests/Pods-SAVTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5EC6100C2CDFADC7AD155D45 /* Pods-Hogshead-SAV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hogshead-SAV.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hogshead-SAV/Pods-Hogshead-SAV.release.xcconfig"; sourceTree = "<group>"; };
-		71D16857208CBB4F0094A2DB /* SAV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		713A22B320A7155F009DD5B7 /* SAVFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAVFirebase.swift; sourceTree = "<group>"; };
+		7180D0DC20A70D7600537925 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		71CE4B2520A7061000E63809 /* SAVDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAVDatabase.swift; sourceTree = "<group>"; };
+		71CE4B2720A7063900E63809 /* SAVReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAVReference.swift; sourceTree = "<group>"; };
+		71D16857208CBB4F0094A2DB /* SAV-alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAV-alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D1685A208CBB4F0094A2DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71D1685F208CBB4F0094A2DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71D16861208CBB500094A2DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +114,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		71CE4B2220A4395300E63809 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				71CE4B2520A7061000E63809 /* SAVDatabase.swift */,
+				71CE4B2720A7063900E63809 /* SAVReference.swift */,
+				713A22B320A7155F009DD5B7 /* SAVFirebase.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		71CE4B2920A70CCF00E63809 /* FirebaseServices */ = {
+			isa = PBXGroup;
+			children = (
+				7180D0DC20A70D7600537925 /* GoogleService-Info.plist */,
+			);
+			name = FirebaseServices;
+			sourceTree = "<group>";
+		};
 		71D1684E208CBB4F0094A2DB = {
 			isa = PBXGroup;
 			children = (
@@ -121,7 +147,7 @@
 		71D16858208CBB4F0094A2DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				71D16857208CBB4F0094A2DB /* SAV.app */,
+				71D16857208CBB4F0094A2DB /* SAV-alpha.app */,
 				71D1686B208CBB500094A2DB /* SAVTests.xctest */,
 				71D16876208CBB500094A2DB /* SAVUITests.xctest */,
 			);
@@ -134,6 +160,8 @@
 				71D1685A208CBB4F0094A2DB /* AppDelegate.swift */,
 				71D16888208CBC200094A2DB /* Assets */,
 				71D16891208CBD410094A2DB /* Coordinators */,
+				71CE4B2220A4395300E63809 /* Database */,
+				71CE4B2920A70CCF00E63809 /* FirebaseServices */,
 				71D16866208CBB500094A2DB /* Info.plist */,
 			);
 			path = SAV;
@@ -206,7 +234,7 @@
 			);
 			name = SAV;
 			productName = SAV;
-			productReference = 71D16857208CBB4F0094A2DB /* SAV.app */;
+			productReference = 71D16857208CBB4F0094A2DB /* SAV-alpha.app */;
 			productType = "com.apple.product-type.application";
 		};
 		71D1686A208CBB500094A2DB /* SAVTests */ = {
@@ -296,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71D16865208CBB500094A2DB /* LaunchScreen.storyboard in Resources */,
+				7180D0DD20A70D7600537925 /* GoogleService-Info.plist in Resources */,
 				71D16862208CBB500094A2DB /* Assets.xcassets in Resources */,
 				71D16860208CBB4F0094A2DB /* Main.storyboard in Resources */,
 			);
@@ -362,20 +391,26 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Hogshead-SAV/Pods-Hogshead-SAV-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -409,8 +444,11 @@
 			files = (
 				71D16897208CBDAB0094A2DB /* AppCoordinator.swift in Sources */,
 				71D1685B208CBB4F0094A2DB /* AppDelegate.swift in Sources */,
+				71CE4B2820A7063900E63809 /* SAVReference.swift in Sources */,
 				71D16894208CBD410094A2DB /* BaseCoordinator.swift in Sources */,
+				713A22B420A7155F009DD5B7 /* SAVFirebase.swift in Sources */,
 				71D16895208CBD410094A2DB /* Coordinator.swift in Sources */,
+				71CE4B2620A7061000E63809 /* SAVDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +507,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_ID_SUFFIX = .alpha;
+				BUNDLE_NAME_SUFFIX = "-alpha";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -519,9 +559,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raytso.SAV${BUNDLE_ID_SUFFIX}";
+				PRODUCT_NAME = "SAV${BUNDLE_NAME_SUFFIX}";
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -529,6 +572,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_ID_SUFFIX = "";
+				BUNDLE_NAME_SUFFIX = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -557,7 +602,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -572,9 +617,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raytso.SAV${BUNDLE_ID_SUFFIX}";
+				PRODUCT_NAME = "SAV${BUNDLE_NAME_SUFFIX}";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -591,8 +639,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raytso.SAV;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -610,8 +656,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raytso.SAV;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
