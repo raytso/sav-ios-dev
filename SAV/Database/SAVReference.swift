@@ -9,7 +9,8 @@
 import Foundation
 
 protocol SAVDatabaseReferenceProtocol {
-    func child(_ a: String) -> Self
+    func child(_ index: String) -> Self
+    func get(result: @escaping ([String : Any]?) -> Void)
     func push() -> Self
 }
 
