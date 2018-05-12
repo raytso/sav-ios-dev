@@ -5,6 +5,8 @@ abstract_target 'Hogshead' do
   use_frameworks!
   inhibit_all_warnings!
 
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
   pod 'RxSwift', '~> 4.0'
   pod 'RxCocoa', '~> 4.0'
   pod 'RxDataSources', '~> 3.0'
