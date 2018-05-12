@@ -47,7 +47,7 @@
 		5EC6100C2CDFADC7AD155D45 /* Pods-Hogshead-SAV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hogshead-SAV.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hogshead-SAV/Pods-Hogshead-SAV.release.xcconfig"; sourceTree = "<group>"; };
 		71CE4B2520A7061000E63809 /* SAVDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAVDatabase.swift; sourceTree = "<group>"; };
 		71CE4B2720A7063900E63809 /* SAVReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAVReference.swift; sourceTree = "<group>"; };
-		71D16857208CBB4F0094A2DB /* SAV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D16857208CBB4F0094A2DB /* SAV-alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAV-alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D1685A208CBB4F0094A2DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71D1685F208CBB4F0094A2DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71D16861208CBB500094A2DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 		71D16858208CBB4F0094A2DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				71D16857208CBB4F0094A2DB /* SAV.app */,
+				71D16857208CBB4F0094A2DB /* SAV-alpha.app */,
 				71D1686B208CBB500094A2DB /* SAVTests.xctest */,
 				71D16876208CBB500094A2DB /* SAVUITests.xctest */,
 			);
@@ -220,7 +220,7 @@
 			);
 			name = SAV;
 			productName = SAV;
-			productReference = 71D16857208CBB4F0094A2DB /* SAV.app */;
+			productReference = 71D16857208CBB4F0094A2DB /* SAV-alpha.app */;
 			productType = "com.apple.product-type.application";
 		};
 		71D1686A208CBB500094A2DB /* SAVTests */ = {
@@ -485,6 +485,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_ID_SUFFIX = .alpha;
+				BUNDLE_NAME_SUFFIX = "-alpha";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -535,9 +537,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raytso.SAV${BUNDLE_ID_SUFFIX}";
+				PRODUCT_NAME = "SAV${BUNDLE_NAME_SUFFIX}";
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -545,6 +550,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_ID_SUFFIX = "";
+				BUNDLE_NAME_SUFFIX = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -573,7 +580,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -588,9 +595,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raytso.SAV${BUNDLE_ID_SUFFIX}";
+				PRODUCT_NAME = "SAV${BUNDLE_NAME_SUFFIX}";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -607,8 +617,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raytso.SAV;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -626,8 +634,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raytso.SAV;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
