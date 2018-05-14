@@ -28,10 +28,10 @@ class SAVFirebaseReference: SAVReference {
         return self
     }
     
-    func get() -> Observable<[String: Any]?> {
+    func get() -> Observable<Any?> {
         return Observable.create { [ref] observer in
-            ref.observe(.value, with: { [weak self] (snapshot) in
-                observer.onNext(self?.convert(snapshot))
+            ref.observe(.value, with: { (snapshot) in
+                observer.onNext(snapshot.value)
                 observer.onCompleted()
             })
             return Disposables.create()
