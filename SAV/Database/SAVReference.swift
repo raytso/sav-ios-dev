@@ -17,7 +17,7 @@ protocol SAVDatabaseReferenceProtocol {
      
      - Returns: the current reference's value.
      */
-    func get() -> Observable<[String: Any]?>
+    func get() -> Observable<Any?>
     
     /**
      Pushes the value under the current reference associated with a auto-created key.
