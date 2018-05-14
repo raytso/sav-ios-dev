@@ -36,6 +36,13 @@ protocol SAVDatabaseReferenceProtocol {
      - Returns: the key where the value is added.
      */
     func set(_ value: Any) -> Observable<String>
+    
+    /**
+     Starts listening for changes to the current reference.
+     
+     - Returns: the key where the value is added.
+     */
+    func listen(for events: [SAVDataEventType]) -> Observable<SAVDataEvent<Any>>
 }
 
 protocol SAVDatabaseQueryProtocol {
