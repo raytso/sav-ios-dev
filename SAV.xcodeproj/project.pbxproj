@@ -11,6 +11,7 @@
 		713A22C620A77B62009DD5B7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713A22C520A77B62009DD5B7 /* Message.swift */; };
 		713A22C820A77C22009DD5B7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713A22C720A77C22009DD5B7 /* User.swift */; };
 		713A22CA20A8018B009DD5B7 /* SAVFirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713A22C920A8018B009DD5B7 /* SAVFirebaseReference.swift */; };
+		713A22CC20A80911009DD5B7 /* SAVReferenceSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713A22CB20A80911009DD5B7 /* SAVReferenceSettable.swift */; };
 		713A22D420A993DA009DD5B7 /* SAVDataEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713A22D320A993DA009DD5B7 /* SAVDataEvent.swift */; };
 		7180D0DD20A70D7600537925 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7180D0DC20A70D7600537925 /* GoogleService-Info.plist */; };
 		71CE4B2620A7061000E63809 /* SAVDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CE4B2520A7061000E63809 /* SAVDatabase.swift */; };
@@ -55,6 +56,7 @@
 		713A22C520A77B62009DD5B7 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		713A22C720A77C22009DD5B7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		713A22C920A8018B009DD5B7 /* SAVFirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAVFirebaseReference.swift; sourceTree = "<group>"; };
+		713A22CB20A80911009DD5B7 /* SAVReferenceSettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAVReferenceSettable.swift; sourceTree = "<group>"; };
 		713A22D320A993DA009DD5B7 /* SAVDataEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAVDataEvent.swift; sourceTree = "<group>"; };
 		7180D0DC20A70D7600537925 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		71CE4B2520A7061000E63809 /* SAVDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAVDatabase.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				71CE4B2520A7061000E63809 /* SAVDatabase.swift */,
 				71CE4B2720A7063900E63809 /* SAVReference.swift */,
+				713A22CB20A80911009DD5B7 /* SAVReferenceSettable.swift */,
 				713A22B320A7155F009DD5B7 /* SAVFirebase.swift */,
 				713A22C920A8018B009DD5B7 /* SAVFirebaseReference.swift */,
 			);
@@ -470,6 +473,7 @@
 				713A22C620A77B62009DD5B7 /* Message.swift in Sources */,
 				71D16894208CBD410094A2DB /* BaseCoordinator.swift in Sources */,
 				713A22B420A7155F009DD5B7 /* SAVFirebase.swift in Sources */,
+				713A22CC20A80911009DD5B7 /* SAVReferenceSettable.swift in Sources */,
 				71D16895208CBD410094A2DB /* Coordinator.swift in Sources */,
 				713A22C820A77C22009DD5B7 /* User.swift in Sources */,
 				71CE4B2620A7061000E63809 /* SAVDatabase.swift in Sources */,
