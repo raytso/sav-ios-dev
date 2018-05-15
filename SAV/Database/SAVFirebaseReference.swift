@@ -56,10 +56,28 @@ class SAVFirebaseReference: SAVReference {
         }
     }
     
-    // MARK: - UDF
-    
-    private func convert(_ snapshot: DataSnapshot) -> [String: Any]? {
-        guard let value = snapshot.value else { return nil }
-        return [snapshot.key: value]
+    func listen(for events: [SAVDataEventType]) -> Observable<SAVDataEvent<Any>> {
+        return Observable.create { [weak self] observer in
+            events.forEach { (event) in
+                self?.ref.observe(event.firbaseDataEventType, with: { (snapshot) in
+                    guard let value = snapshot.value else { return }
+                    observer.onNext(SAVDataEvent<Any>(type: event, value: value))
+                })
+            }
+            return Disposables.create()
+        }
+    }
+}
+
+private extension SAVDataEventType {
+    var firbaseDataEventType: DataEventType {
+        switch self {
+        case .add:
+            return .childAdded
+        case .change:
+            return .childChanged
+        case .remove:
+            return .childRemoved
+        }
     }
 }
