@@ -10,5 +10,7 @@ import Foundation
 
 struct Message {
     let message: String
+//    let createTime: Double
+    let sendTime: Double
     let sender: User
 }
